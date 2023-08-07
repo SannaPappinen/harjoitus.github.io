@@ -1,0 +1,50 @@
+
+.login-page {
+  background: linear-gradient(300deg, var(--white), var(--primary-color));
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginpage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--login-box);
+  border-radius: 20px;
+  padding: 4rem 8rem;
+  width: 30%;
+  gap: .5rem;
+}
+
+.login-text {
+  text-align: center; 
+}
+
+.logo-login {
+  display: center;
+  width: 150px;
+}
+
+.input-field {
+  border-radius: .4rem;
+  padding: .8rem;
+}
+
+.login-btn {
+  width: 100%;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.forgot-password:active {
+  transform: scale(0.95);
+}

@@ -1,0 +1,164 @@
+/* -------- Front page styling -------- */
+
+.frontpage {
+  background-image: url("../assets/Background.jpeg");
+  min-height: 100vh;
+  position: relative;
+  background-size: cover;
+}
+
+.frontpage-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  gap: 12rem;
+  width: 60%;
+}
+
+@media (max-width: 1200px) {
+  .frontpage-container {
+    left: 60%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .frontpage-container {
+    left: 50%;
+  }
+  .frontpage {
+    background-size:auto;
+  }
+}
+
+/* ----Features ---- */
+
+#Features {
+  margin: 3%;
+  padding: 5%;
+}
+
+.features-wrapper {
+  display: flex;
+  align-items: center;
+  padding-bottom: 7%;
+  gap: 5rem;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+}
+
+@media (max-width: 900px) {
+  .features-wrapper {
+    flex-direction: column;
+    gap: 3rem;
+    padding-bottom: 10%;
+  }
+  .class {
+    flex-direction: column-reverse;
+  }
+}
+
+/* ---- Quote ---- */
+
+.quote-container {
+  background-image: url("../assets/Quote_background.jpg");
+  background-size: cover;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote-wrapper {
+  text-align: center;
+  color: white;
+}
+
+/* ---- Faq ---- */
+
+#Faq {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 10rem 20rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.question {
+  cursor: pointer;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #ececec;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.answer {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border-top: 1px solid #ccc;
+}
+
+@media (max-width: 1500px) {
+  #Faq {
+    padding: 7rem 14rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #Faq {
+    padding: 5rem 10rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  #Faq {
+    padding: 3rem;
+  }
+}
+
+/* ---- Footer ---- */
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: var(--dark-grey);
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: var(--primary-color);
+}
+
+.yoga-planner {
+  margin-left: 1rem;
+}

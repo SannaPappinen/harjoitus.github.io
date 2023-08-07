@@ -1,0 +1,103 @@
+/* -------- Nav -------- */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  padding: 1.5rem 3rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 115px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 1rem;
+}
+
+.login-button {
+  background-color: var(--secondary-color);
+}
+
+/* -------- Burger menu -------- */
+
+.burger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-menu div {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  border-radius: 1rem;
+  background-color: var(--black);
+  transition: all 0.5s ease-in;
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    overflow-x: hidden;
+  }
+  .burger-menu {
+    display: block;
+    z-index: 2;
+  }
+  .navbar {
+    padding: 3rem 3rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    font-size: 1.8rem;
+    top: 0vh;
+    right: 0px;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+
+  .logo {
+    z-index: 3;
+  }
+}
+
+/* -------- Animation ------- */
+
+.nav-active {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* -------- Toggle animation -------- */
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -7px);
+}

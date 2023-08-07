@@ -1,0 +1,41 @@
+
+
+.settings-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; 
+  height: 100vh; 
+  padding: 5rem 10rem;
+}
+
+.left-sidebar {
+  width: 100px; /* Set the width of the sidebar to 50px */
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.settings-wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-yoga {
+  display: flex;
+}
+
+span {
+  margin-left: 1rem;
+}
+
+.frontpage-text {
+  flex: 1; /* Make the content take up the remaining space */
+  padding: 20px;
+}
+
+.bottom-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; 
+  padding: 10px;
+  background-color: #f2f2f2;
+}
